@@ -1,0 +1,9 @@
+//hello.c - CS120 lab 1
+//Satvik Kukreti
+
+#include <stdio.h>
+
+int main()
+{
+  printf("Hello, world\n");
+}
