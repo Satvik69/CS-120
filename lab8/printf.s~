@@ -1,0 +1,15 @@
+	#### Satvik Kukreti
+	
+	.data
+str: .asciiz "The number # is called five\n"
+
+	.text
+   # ...
+   addi $sp, $sp, -8  # Get space on the stack
+   li $t0, 5
+   sw $t0, 4($sp)  # push 5 onto the stack
+   la $t0, str
+   sw $t0, 0($sp)  # push the string address
+   jal printf
+   addi $sp, $sp, 8    # move stack pointer back
+   # ....
